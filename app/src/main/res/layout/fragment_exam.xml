@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.samit.saravpaper.ui.exam.ExamViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:weightSum="100"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="14"
+                    android:background="@color/purple"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtHeading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_horizontal"
+                            android:text="Marathi"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sdp"
+                            android:textStyle="bold"
+
+                            />
+                        <ImageView
+                            android:id="@+id/ivProfile"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/ic_profile"
+                            android:layout_alignParentEnd="true"
+                            ></ImageView>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:background="@color/purple"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtStandard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_horizontal"
+                            android:text="Motha Shishu"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp"
+
+
+                            />
+
+                        <TextView
+                            android:id="@+id/txtTerm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_horizontal"
+                            android:text="Second Unit Test"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp"
+
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtNoDataFound"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:fontFamily="@font/roboto_regular"
+                    android:background="@drawable/rounded_corner_white_fill"
+                    android:text="No Data found"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sdp"
+
+                    android:gravity="center"
+                    android:visibility="gone"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/llContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="86"
+                    android:background="@drawable/rounded_corner_white_fill"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/txtQuesMain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="left"
+
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                />
+                            <LinearLayout
+                                android:id="@+id/llQues"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:background="@drawable/rounded_corner_light_purple_fill">
+
+                                <TextView
+                                    android:id="@+id/txtQues"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:gravity="left"
+
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_17sdp"
+                                    android:layout_marginLeft="@dimen/_15sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    />
+                                <ImageView
+                                    android:id="@+id/ivQues"
+                                    android:layout_width="@dimen/_200sdp"
+                                    android:layout_height="@dimen/_130sdp"
+                                    android:layout_gravity="center"
+                                    />
+                            </LinearLayout>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvAnswer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/txtHeading"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_35sdp"
+                                />
+
+                              </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llActionButtons"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:gravity="bottom|center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/txtPrevious"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1.2"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="मागे"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_corner_purple_fill"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1.2"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="समाविष्ट करा"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_corner_purple_fill"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+                <TextView
+                    android:id="@+id/txtNext"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1.2"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="पुढे"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_corner_purple_fill"
+                    />
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivRightAns"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_35sdp"
+              android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/ivWrongAns"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/_35sdp"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>
+
+
+
+
+

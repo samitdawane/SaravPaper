@@ -1,0 +1,22 @@
+[
+  {
+
+    "paperCode": "1",
+    "stdCode": "2",
+    "qMainOrder": 0,
+    "queOrder":0 ,
+    "qMain": "  ",
+    "que": null,
+    "queImg": null,
+    "ans1": "",
+    "ans1_Img": null,
+    "ans2": "",
+    "ans2_Img": null,
+    "ans3": null,
+    "ans3_Img": null,
+    "ans4": null,
+    "ans4_Img": null,
+    "correctANS":0
+  }
+]
+

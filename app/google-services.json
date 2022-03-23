@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1003265778423",
+    "project_id": "sarav-paper",
+    "storage_bucket": "sarav-paper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003265778423:android:4518ba27714fde569269f2",
+        "android_client_info": {
+          "package_name": "com.samit.saravpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003265778423-ii2pv1btdkm607u3mj23ha7a54u88m32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWmeoFEyWfIpZf-7vKMxSTn9cvIE88Ix4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003265778423-ii2pv1btdkm607u3mj23ha7a54u88m32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
